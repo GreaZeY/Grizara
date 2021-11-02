@@ -1,0 +1,125 @@
+.banner{
+    background: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
+    height: 100vmin;
+    text-align: center;
+    background-image: url(../../images/cover.jfif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+    color: white;
+}
+
+.banner >h1{
+    margin:5vmax;
+    font : 400 2.5vmax "Roboto";
+}
+.banner >a>button{
+    margin-bottom: 5vmax;
+    cursor: pointer;
+    background-color: white;
+    border:1px solid white;
+    padding:1vmax;
+    transition: all 0.5s;
+    width:9vmax;
+    font:500 1vmax "Roboto"
+}
+
+.banner>a>button:hover{
+    background:linear-gradient(315deg, #fc5296 0%, #f67062 74%); ;
+    color: white;
+}
+
+.banner::after{
+    content:"";
+    width:100vw;
+    height:100vmin;
+    background: white;
+    position: absolute;
+    top:0;
+    left:0;
+    clip-path:polygon(100% 68%,0 100%,100% 100%)
+}
+.homeHeading{
+    text-align: center;
+    font-family: Roboto;
+    font-size:1.4vmax;
+    border-bottom: 1px solid #FF007A ;
+    width: 20vmax;
+    padding:1vmax;
+    margin:5vmax auto;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.container{
+    display:flex;
+    margin:2vmax auto;
+    width: 80vw;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.productCard{
+    width:14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:rgb(48, 48, 48);
+    margin:2vmax;
+    transition: all .5s;
+    padding-bottom: .5vmax;
+}
+
+.productCard>img{
+    width:14vmax;
+    height: 18vmax;
+    object-fit: cover;
+}
+.productCard>div{
+    margin:.5vmax;
+    display: flex;
+    justify-content: flex-start;
+}
+.productCard>div>span{
+    margin-top: .5vmax;
+    margin-left: .5vmax;
+    font:300 .7vmax "Roboto"
+}
+
+.productCard>p{
+    font-size:1vmax;
+    font-family: "Roboto";
+    margin: 1vmax .5vmax;
+    margin-bottom: 0;
+}
+
+.productCard>span{
+    margin: .5vmax;
+    font:300 1vmax "Roboto";
+    color:tomato;
+    text-align: end;
+}
+.productCard:hover{
+    box-shadow: 0 0 8px rgba(15,15,15,0.26);
+    transform: translateY(-.3vmax);
+}
+
+@media screen and (max-width:640px) {
+    .productCard>p{
+        font-size:1.7vmax;
+    }
+    .productCard>div{
+        margin: 0;
+        display: block;
+    }
+    .productCard>span{
+        font-size:1.5vmax;
+    }
+    .productCard>div>span{
+        font:300 1vmax;
+    }
+    
+}
