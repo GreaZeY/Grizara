@@ -18,6 +18,14 @@ const userSchema = new mongoose.Schema({
         validate:[validator.isEmail,"Please Enter a valid e-mail address."]
 
     },
+    mobileNo: {
+        type: Number,
+        required: [true, "Please Enter your Mobile No."],
+        required: true,
+        maxlength:[10,"Please Enter a valid mobile no."],
+        minlength:[10,"Please Enter a valid mobile no."]
+        
+    },
     password: {
         type: String,
         required: [true, "Please Enter your Password"],
@@ -27,18 +35,21 @@ const userSchema = new mongoose.Schema({
     avatar: {
             public_id: {
                 type: String,
-                required: true
+                default:'default_avatar'
             },
             url: {
                 type: String,
-                required: true
+                default:'https://res.cloudinary.com/greazey/image/upload/v1636649067/UserAvatars/Profile_vbequf.png'
             }    
     },
     role:{
         type: String,
         default:"user"
     },
-
+    createdAt:{
+        type:Date,
+        default:Date.now
+    },
     resetPasswordToken:String,
     resetPasswordExpire:Date,
 
@@ -85,4 +96,4 @@ userSchema.methods.getResetPasswordToken = function(){
     return resetToken
 }
 
-module.exports = mongoose.model("user",userSchema)
+module.exports = mongoose.model("User",userSchema)

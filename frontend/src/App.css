@@ -1,0 +1,62 @@
+*{
+ margin:0;
+ scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Roboto",sans-serif;
+}
+
+::-moz-selection {
+  background: #ff007b46;
+}
+
+::selection {
+  background:#ff007b46;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 50vmax;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(315deg, #f67062 0%,#fc5296 100%); 
+    border-radius: 50vmax;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  ::placeholder { 
+    color: #ff007b;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+    color: #ff007b;
+  }
+  
+
+  input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+

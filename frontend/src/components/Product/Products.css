@@ -1,0 +1,155 @@
+.search {
+  display: flex;
+  flex-direction: column;
+}
+.productsbox {
+  display: flex;
+  min-height: 100vh;
+}
+.productsHeading {
+  margin: 2vmax auto;
+  border-bottom: 1px solid #ff007a;
+  padding: 3vmax 2vmax 0.5vmax 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 75vw;
+}
+
+.filterBox {
+  margin-top: 13vmax;
+  margin-left: 5vmax;
+  border-right: 0.1vmax solid #ff007a;
+  display: flex;
+  flex-direction: column;
+  min-width: 15vw;
+  max-width: 15vw;
+}
+.pricefilter {
+  display: flex;
+  margin-bottom: 2vmax;
+}
+.pricefilter > form {
+  overflow: hidden;
+}
+.pricefilter > form {
+  width: 11vmax;
+}
+.pricefilter > form > input {
+  outline: none;
+  width: 25%;
+  font-size: .8vmax;
+  height: 1.2vmax;
+  background: transparent;
+  margin: 0.25vmax;
+  border: 0.5px solid #ff007a;
+}
+.pricefilter > form > button{
+  margin: 0.25vmax;
+  border: none;
+  width: 2vmax;
+  height: 1.4vmax;
+  font-size: 1vmax;
+  padding: 0;
+  background: #ff007a;
+  color: white;
+  margin-left: 0.7vmax;
+  box-shadow: 0px 0px 0.4vmax rgb(218, 216, 216);
+  overflow: hidden;
+
+  transition: 0.5s;
+}
+.filterh1{
+  display: flex;
+  margin-bottom: 1vmax;
+}
+.filterh1>svg{
+color:#ff007a;
+width: 1.2vmax;
+height: 1.2vmax;
+}
+.filterh1>p{
+  color:#ff007a;
+  font-size: 1vmax;
+  height: 1.2vmax;
+  overflow: hidden;
+ 
+  }
+.removefilter{
+  background: transparent;
+  border: none;
+  font-size: .7vmax;
+  color: red;
+}
+.removefilter:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.pricefilter > form > button:hover {
+  background: black;
+}
+.categoryBox {
+  padding: 0%;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: #ff007a;
+}
+
+.ratingsabove {
+  margin-top: 2vmax;
+  width: 20vmax;
+  display: flex;
+ 
+}
+
+.ratingsabove > fieldset {
+  border: 1px solid #ff007a;
+}
+
+@media screen and (max-width: 640px) {
+  .productsbox {
+    flex-direction: column;
+  }
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+    margin-bottom: 0;
+    padding: 1vmax;
+  }
+  /* .filterh1>p{
+    margin-top: .5vmax;
+   
+    } */
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+  .filterBox {
+    border: none;
+    flex-wrap: wrap;
+    margin-top: 10vmax;
+    min-width: 90vw;
+    border-bottom: 0.1vmax solid #ff007a;
+  }
+  .categoryBox {
+    display: flex;
+    flex-direction: row;
+  }
+}

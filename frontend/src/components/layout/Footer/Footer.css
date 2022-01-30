@@ -1,0 +1,108 @@
+#footer{
+margin-top: 10vmax;
+display:flex;
+padding:2vmax;
+background-color: rgb(34,33,33);
+color:white;
+align-items: center;
+justify-content: space-between;
+}
+
+.leftFooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4vmax;
+}
+
+.leftFooter >h4{
+    font-family: "Franklin Gothic Medium","Arial Narrow",Arial, sans-serif;
+    font-size: 0.8vmax;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5vmax;
+}
+
+.leftFooter >p{
+    text-align: center;
+    font-size: 0.7vmax;
+    font-family: "Lucida Sans","Lucida Sans Regular","Lucida Grande","Lucida Sans Unicode",Geneva, Verdana, sans-serif;
+}
+.appContainer{
+    display: flex;
+}
+.appContainer>img{
+    width: 8vmax;
+    margin: 1vmax;
+    cursor:pointer;
+}
+
+
+.midFooter{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.midFooter>p{
+    display: flex;
+   justify-content: center;
+    max-width: 60%;
+    margin: 1vmax auto;
+}
+.midFooter>p{
+    font-family:"Gill Sans","Arial Narrow",Arial, sans-serif;
+    text-align: center;
+    font-size: .8vmax;
+    margin-top:0;
+}
+.rightFooter{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightFooter >h4{
+    font-family: "Roboto","Arial Narrow",Arial, sans-serif;
+    font-size: 1.4vmax;
+
+}
+
+
+#logo{
+    width: 13vmax;
+    margin-bottom: 1vmax;
+    align-self: center;
+}
+
+
+.rightFooter div>a{
+    color: rgb(184, 184, 185);
+    transition: 1s;
+    margin-top:1vmax;
+}
+
+.rightFooter div{
+    margin-top:2vmax;
+}
+.rightFooter div>a:hover{
+    color: #FF007A;
+    
+}
+
+@media screen  and (max-width:1024px) {
+    .appContainer{
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen  and (max-width:640px) {
+    .appContainer{
+        flex-wrap: wrap;
+    }
+    
+}

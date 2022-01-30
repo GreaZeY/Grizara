@@ -18,7 +18,7 @@ const productSchema = new mongoose.Schema({
         maxLength: [7, "Price cannot exceed upto 7 figures."]
 
     },
-    rating: {
+    ratings: {
         type: Number,
         default: 0
 
@@ -51,6 +51,11 @@ const productSchema = new mongoose.Schema({
         default: 0
     },
     reviews: [{
+        user:{
+            type:mongoose.Schema.ObjectId,
+            ref:"user",
+            required:true
+        },
         name: {
             type: String,
             required: true

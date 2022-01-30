@@ -1,0 +1,61 @@
+@mixin object-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  $circleSize: 20vmax;
+  $radius: 20vmax;
+  $shadow: 0 0 10px 0 rgba(255,255,255,.35);
+  $fontColor: #ff007b5b;
+  
+  .profile-pic {
+    color: transparent;
+    transition: all .3s ease;
+    @include object-center;
+    position: relative;
+    transition: all .3s ease;
+    
+    
+    input {
+      display: none;
+      
+    }
+    
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: $circleSize;
+      height: $circleSize;
+      box-shadow: $shadow;
+      border-radius: $radius;
+      z-index: 0;
+      border: .2vmax solid #ff007b6b;
+    }
+    svg{
+    
+      font-size: 6vmax;
+      
+    }
+    .-label {
+      cursor: pointer;
+      height: calc($circleSize + .5vmax);
+      width: calc($circleSize + .5vmax);
+      font-size: 1.5vmax;
+     
+    }
+    
+    &:hover {
+      .-label {
+        @include object-center;
+        background-color: rgba(0,0,0,.8);
+        z-index: 10000;
+        color: $fontColor;
+        transition: background-color .2s ease-in-out;
+        border-radius: $radius;
+        margin-bottom: 0;
+        
+      }
+    }
+    
+  }
