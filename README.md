@@ -3,15 +3,15 @@
 An e-commerce Website for business where user can create thier account and shop products.
 
 ### Front-end
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/grizara1.png)
+![](https://github.com/GreaZeY/Grizara/blob/cc59a977a1a756da89d1d0527e6ecdc1fbc683c3/Screenshots/grizara1.png)
 
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/grizara.png)
+![](https://github.com/GreaZeY/Grizara/blob/cc59a977a1a756da89d1d0527e6ecdc1fbc683c3/Screenshots/grizara.png)
 
 ### API 
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/api.png)
+![](https://github.com/GreaZeY/Grizara/blob/cc59a977a1a756da89d1d0527e6ecdc1fbc683c3/Screenshots/api.png)
 
 ### Database view
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/Picture1.png)
+![](https://raw.githubusercontent.com/GreaZeY/Grizara/0c5ff671e1e4e4975fb3f5ff48e1b194acbdb18a/Screenshots/Picture1.png)
 
 Libraries/technologies used in Back-end
 
@@ -32,4 +32,4 @@ Libraries/technologies used in Front-end
 - `webfontloader` : to load the fonts.
 
 
-`node`: If you get this error `FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory` while building a production build use this command to build `node --expose-gc --max-old-space-size=8192 node_modules/react-scripts/scripts/build.js` 
+> `note`: If you get this error `FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory` while building a production build use this command to build `node --expose-gc --max-old-space-size=8192 node_modules/react-scripts/scripts/build.js` 
