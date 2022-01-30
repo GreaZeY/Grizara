@@ -3,15 +3,15 @@
 An e-commerce Website for business where user can create thier account and shop products.
 
 ### Front-end
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/grizara1.png)
+![](https://github.com/GreaZeY/Grizara/blob/cc59a977a1a756da89d1d0527e6ecdc1fbc683c3/Screenshots/grizara1.png)
 
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/grizara.png)
+![](https://github.com/GreaZeY/Grizara/blob/cc59a977a1a756da89d1d0527e6ecdc1fbc683c3/Screenshots/grizara.png)
 
 ### API 
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/api.png)
+![](https://github.com/GreaZeY/Grizara/blob/cc59a977a1a756da89d1d0527e6ecdc1fbc683c3/Screenshots/api.png)
 
 ### Database view
-![](https://github.com/GreaZeY/Grizara/blob/main/Screenshots/Picture1.png)
+![](https://raw.githubusercontent.com/GreaZeY/Grizara/0c5ff671e1e4e4975fb3f5ff48e1b194acbdb18a/Screenshots/Picture1.png)
 
 Libraries/technologies used in Back-end
 
