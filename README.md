@@ -32,4 +32,4 @@ Libraries/technologies used in Front-end
 - `webfontloader` : to load the fonts.
 
 
-> `node`: If you get this error `FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory` while building a production build use this command to build `node --expose-gc --max-old-space-size=8192 node_modules/react-scripts/scripts/build.js` 
+> `note`: If you get this error `FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory` while building a production build use this command to build `node --expose-gc --max-old-space-size=8192 node_modules/react-scripts/scripts/build.js` 
