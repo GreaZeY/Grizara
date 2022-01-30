@@ -30,3 +30,6 @@ Libraries/technologies used in Front-end
 - `axios` : to fetch the data from backend.
 - `react-icons` : to get all simple svg icons like search, cart, facebook, instagram logo.
 - `webfontloader` : to load the fonts.
+
+
+`node`: If you get this error `FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory` while building a production build use this command to build `node --expose-gc --max-old-space-size=8192 node_modules/react-scripts/scripts/build.js` 
