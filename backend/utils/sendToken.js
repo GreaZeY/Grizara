@@ -10,9 +10,11 @@ const sendToken = (user,statusCode,res)=>{
         ),
         httpOnly:true,
     }
+    let cUser = user._doc
+    delete cUser.password
     res.status(statusCode).cookie("token",token,options).json({
         success:true,
-        user,
+        user:cUser,
         token
     })
 }

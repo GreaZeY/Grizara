@@ -39,7 +39,6 @@ function App() {
    <Route exact path = "/" component={Home}/>
    <Route exact path="/about" component={About} />
    <Route exact path="/contact" component={Contact} />
-   <Route exact path = "/product/:id/:name" component={ProductDetals}/>
    <Route exact path = "/products" component={Products}/>
    <Route path = "/products/:keyword" component={Products}/>
    <Route exact path = "/search" component={Search}/>
@@ -49,6 +48,7 @@ function App() {
    <Route exact path = "/cart" component={Cart}/>
    <ProtectedRoute exact path = "/checkout" component={Checkout}/>
   
+   <Route path = "/product/:id/:name" component={ProductDetals}/>
    <Footer/>
    </Router>
   );
