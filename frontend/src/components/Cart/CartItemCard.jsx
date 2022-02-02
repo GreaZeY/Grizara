@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const CartItemCard = ({ item, deleteCartItems }) => {
   return (
-    <div className="CartItemCard">
+    <div title={item.name} className="CartItemCard">
       <Link to={`/product/${item.product}/${item.name}`}><img src={item.image} alt="ssa" /></Link>
       <div>
-      <Link to={`/product/${item.product}/${item.name}`}>{item.name}</Link>
+      <Link to={`/product/${item.product}/${item.name}`}><p >{item.name.length>70? item.name.slice(0,70)+'...':item.name}</p></Link>
       <b className={item.stock<1?"redColor":"greenColor"}
                 style={{fontSize:'.7vmax',marginTop:'.4vmax'}} >
                     {item.stock<1?"Out of Stock":"In Stock"}

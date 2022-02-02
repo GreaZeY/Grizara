@@ -13,9 +13,9 @@ const Product = ({product}) => {
     
     }
     return (
-       <Link className="productCard" to={`/product/${product._id}/${product.name}`}>
+       <Link title={product.name} className="productCard" to={`/product/${product._id}/${product.name}`}>
            <img src={product.images[0].url} alt={product.name}></img>
-            <p>{product.name}</p>
+            <p >{product.name.length>30? product.name.slice(0,30)+'...':product.name}</p>
             <div>
                 <ReactStars {...options}>
             </ReactStars><span>({product.numOfReviews} Reviews)</span>
