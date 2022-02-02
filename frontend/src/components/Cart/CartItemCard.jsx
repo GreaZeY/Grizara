@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 const CartItemCard = ({ item, deleteCartItems }) => {
   return (
     <div title={item.name} className="CartItemCard">
-      <Link to={`/product/${item.product}/${item.name}`}><img src={item.image} alt="ssa" /></Link>
-      <div>
-      <Link to={`/product/${item.product}/${item.name}`}><p >{item.name.length>70? item.name.slice(0,70)+'...':item.name}</p></Link>
+      <div >
+      <Link to={`/product/${item.product}/${item.name}`}><img src={item.image} alt={item.name}/></Link>
+      </div>
+      <div className="cart-item-info">
+      <Link to={`/product/${item.product}/${item.name}`}>{item.name.length>70? item.name.slice(0,70)+'...':item.name}</Link>
       <b className={item.stock<1?"redColor":"greenColor"}
                 style={{fontSize:'.7vmax',marginTop:'.4vmax'}} >
                     {item.stock<1?"Out of Stock":"In Stock"}

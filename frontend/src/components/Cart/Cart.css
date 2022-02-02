@@ -60,16 +60,11 @@
     height: 8vmax;
   }
   
-  .cartInput > button {
-    border: none;
-    background-color: rgba(0, 0, 0, 0.616);
-    padding: 0.5vmax;
+  .cartInput > svg {
     cursor: pointer;
-    color: white;
-    transition: all 0.5s;
   }
-  .cartInput > button:hover {
-    background-color: rgba(0, 0, 0, 0.767);
+  .cartInput > svg:hover {
+    color: #ff007b;
   }
   
   .cartInput > input {

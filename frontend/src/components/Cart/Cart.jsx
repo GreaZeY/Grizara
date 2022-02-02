@@ -7,7 +7,7 @@ import { Typography } from "@material-ui/core";
 import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
 import { Link } from "react-router-dom";
 import MetaData from "../layout/MetaData";
-
+import {HiMinusSm,HiOutlinePlusSm} from 'react-icons/hi'
 const Cart = ({ history }) => {
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
@@ -60,15 +60,13 @@ const Cart = ({ history }) => {
                 <div className="cartContainer" key={item.product}>
                   <CartItemCard item={item} deleteCartItems={deleteCartItems} />
                   <div className="cartInput">
-                    <button
+                    <HiMinusSm
                       onClick={() =>
                         decreaseQuantity(item.product, item.quantity)
                       }
-                    >
-                      -
-                    </button>
+                    />
                     <input type="number" value={item.quantity} readOnly />
-                    <button
+                    <HiOutlinePlusSm
                       onClick={() =>
                         increaseQuantity(
                           item.product,
@@ -76,9 +74,7 @@ const Cart = ({ history }) => {
                           item.stock
                         )
                       }
-                    >
-                      +
-                    </button>
+                    />
                   </div>
                   <p className="cartSubtotal">{`₹${
                     item.price * item.quantity
