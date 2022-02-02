@@ -12,6 +12,7 @@ const sendToken = (user,statusCode,res)=>{
     }
     let cUser = user._doc
     delete cUser.password
+    
     res.status(statusCode).cookie("token",token,options).json({
         success:true,
         user:cUser,
