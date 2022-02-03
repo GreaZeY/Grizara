@@ -31,16 +31,18 @@
     "react-rating-stars-component": "^2.2.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.0",
+    "sass": "^1.49.7",
     "styled-components": "^5.3.3",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:2": "react-scripts --max_old_space_size=8192 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

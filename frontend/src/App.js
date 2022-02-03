@@ -40,7 +40,7 @@ function App() {
    <Route exact path="/about" component={About} />
    <Route exact path="/contact" component={Contact} />
    <Route exact path = "/products" component={Products}/>
-   <Route path = "/products/:keyword" component={Products}/>
+   <Route exact path = "/products/:keyword" component={Products}/>
    <Route exact path = "/search" component={Search}/>
    <Route exact path = "/login" component={LoginAndSignUp}/>
    <ProtectedRoute exact path = "/account" component={Profile}/>
